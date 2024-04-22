@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: red;
+}
+.navbar-brand img{
+    margin-right: 50px;
+}
+
+.nav-link {
+    /* text-align: center; */
+    margin: 20px;
+    font-size: 1.rem;
+}
+
+.lien{
+    text-align: center;
+    
+    /* margin-right: 100px; */
+}
