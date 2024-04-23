@@ -1,332 +1,96 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(/assets/img/fond.jpg);
+  width: 100vw;
+  background-size: cover;
+  height: 100vh;
+  background-position: bottom;
+  /* position: relative; */
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box{
+  height: 86vh;
+  width: 75%;
+  padding:  0 20px;
+  z-index: 10;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  display: inline-block;
+  /* backdrop-filter: blur(25px); */
+  box-shadow: -15px 17px 17px rgba(252, 250, 250, 0.15);
+}
+
 
 header{
-    background:rgba(170, 204, 232, 0.5);
-    /* justify-content: space-between; */
-    /* padding:  0 10px; */
-    display: flex;
-    /* width: 100vw; */
-    /* margin: auto; */
-    align-items: center;
-    /* min-height: 8vh; */
-    /* margin-top: 50px; */
-    /* position: fixed; */
-    /* margin-right:100px ; */
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
-.content{
-    background: url(/assets/img/image-fond.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
+#logo img{
+  width: 45%;
+  margin-left: 90px;
 }
 
 
 a{
-    text-decoration: none;
-    
+  text-decoration: none;
+  /* color: #fff; */
+  
 }
 
 ul{
-    list-style: none;
-    display: flex;
-    text-align: center;
-    /* margin: 0 10px; */
+  list-style: none;
+  display: flex;
+  text-align: center;
+  /* margin: 0 10px; */
 }
 
 li{
-    display: block;
-    width: 100px;
-    text-align: center;
-    margin: 0 20px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  /* margin: 0 20px; */
 
 }
 
 li>a{
-    color: rgb(229, 19, 215);
-    text-align: center;
-    text-decoration: none;
-    /* margin-top:100px ; */
-    font-weight: 400;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  /* margin-top:100px ; */
+  font-weight: 400;
 }
 
-.logo img{
-    width: 20%;
+button{
+  display: block;
+  margin: 60px auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:80px ;
+  border: 15px solid #fff;
+  border-radius: 15px;
 }
 
-#explore {
-    width: 150px;
-    height: 60px;
-    border: 3px solid #315cfd;
-    border-radius:45px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: rgb(127, 8, 117);
-    font-size: 1em;
-    font-weight: 550;
-    color: aliceblue;
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-    margin: 20px auto;
-    bottom: 0;
+button>a{
+  text-decoration: none;
 }
-
-#explore>a{
-    text-decoration: none;
-    color:#fff;
-  }
-  
-  #explore:hover {
-    background: #315cfd;
-    color: white;
-    font-size: 1.1em;
-  }
-
-  /* carroussel */
-
-/* Définition des variables Sass */
-$time: 500ms;
-$delay: $time/2;
-$mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
-
-/* Définition de l'animation heartbeat */
-@keyframes heartbeat {
-  0% {
-    transform: scale(0);
-  }
-  25% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Styles pour le corps de la page */
-body {
-  color: #ffffff;
-  background-color: #27292d;
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-  height: 1200px;
-}
-
-/* Styles pour le conteneur du slider */
-.slider-container {
-  position: relative;
-  margin: 0 auto;
-  width: 800px;
-  height: 600px;
-
-  /* Styles pour le conteneur des points de navigation */
-  .bullet-container {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* Styles pour les points de navigation */
-    .bullet {
-      margin-right: 14px;
-      &:last-child {
-        margin-right: 0px;
-      }
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      background-color: white;
-      opacity: 0.5;
-      &.active {
-        opacity: 1;
-      }
-    }
-  }
-
-  /* Styles pour le contenu du slider */
-  .slider-content {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 70%;
-    height: 60%;
-    transform: translate(-50%, -50%);
-
-    /* Styles pour les diapositives individuelles */
-    .slider-single {
-      position: absolute;
-      z-index: 0;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      transition: z-index 0ms $delay;
-
-      /* Styles pour les images des diapositives */
-      .slider-single-image {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
-        transition: $time $mode;
-        transform: scale(0);
-        opacity: 0;
-      }
-
-      /* Styles pour le bouton de téléchargement */
-      .slider-single-download {
-        position: absolute;
-        display: block;
-        right: -22px;
-        bottom: 12px;
-        padding: 15px;
-        color: #333333;
-        background-color: #fdc84b;
-        font-size: 18px;
-        font-weight: 600;
-        font-family: "karla";
-        border-radius: 5px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        transition: $time $mode;
-        opacity: 0;
-        &:hover,
-        &:focus {
-          outline: none;
-          text-decoration: none;
-        }
-      }
-
-      /* Styles pour le titre de la diapositive */
-      .slider-single-title {
-        display: block;
-        float: left;
-        margin: 16px 0 0 20px;
-        font-size: 20px;
-        font-family: "karla";
-        font-weight: 400;
-        color: #ffffff;
-        transition: $time $mode;
-        opacity: 0;
-      }
-
-      /* Styles pour les likes de la diapositive */
-      .slider-single-likes {
-        display: block;
-        float: right;
-        margin: 16px 20px 0 0;
-        transition: $time $mode;
-        opacity: 0;
-        i {
-          font-size: 20px;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 5px;
-          color: #ff6060;
-          transition: $time $mode;
-          transform: scale(0);
-        }
-        p {
-          display: inline-block;
-          vertical-align: middle;
-          margin: 0;
-          color: #ffffff;
-        }
-        &:hover,
-        &:focus {
-          outline: none;
-          text-decoration: none;
-        }
-      }
-
-      /* Styles pour les états de visibilité */
-      &.preactivede {
-        .slider-single-image {
-          transform: translateX(-50%) scale(0);
-        }
-      }
-      &.preactive {
-        z-index: 1;
-        .slider-single-image {
-          opacity: 0.3;
-          transform: translateX(-25%) scale(0.8);
-        }
-        .slider-single-download {
-          transform: translateX(-150px);
-        }
-        .slider-single-title {
-          transform: translateX(-150px);
-        }
-        .slider-single-likes {
-          transform: translateX(-150px);
-        }
-      }
-      &.proactive {
-        z-index: 1;
-        .slider-single-image {
-          opacity: 0.3;
-          transform: translateX(25%) scale(0.8);
-        }
-        .slider-single-download {
-          transform: translateX(150px);
-        }
-        .slider-single-title {
-          transform: translateX(150px);
-        }
-        .slider-single-likes {
-          transform: translateX(150px);
-        }
-      }
-      &.proactivede {
-        .slider-single-image {
-          transform: translateX(50%) scale(0);
-        }
-      }
-      &.active {
-        z-index: 2;
-        .slider-single-image {
-          opacity: 1;
-          transform: translateX(0%) scale(1);
-        }
-        .slider-single-download {
-          opacity: 1;
-          transition-delay: 100ms;
-          transform: translateX(0px);
-        }
-        .slider-single-title {
-          opacity: 1;
-          transition-delay: 200ms;
-          transform: translateX(0px);
-        }
-        .slider-single-likes {
-          opacity: 1;
-          transition-delay: 300ms;
-          transform: translateX(0px);
-          i {
-            animation-name: heartbeat;
-            animation-duration: 500ms;
-            animation-delay: 900ms;
-            /* animation-interation:; */
-            animation-fill-mode: forwards;
-          }
-        }
-      }
-    }
-  }
-
-  /* Styles pour la flèche de*/

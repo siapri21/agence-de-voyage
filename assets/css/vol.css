@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background:rgba(170, 204, 232, 0.5);
+    /* justify-content: space-between; */
+    /* padding:  0 10px; */
+    display: flex;
+    /* width: 100vw; */
+    /* margin: auto; */
+    align-items: center;
+    /* min-height: 8vh; */
+    /* margin-top: 50px; */
+    /* position: fixed; */
+    /* margin-right:100px ; */
+    text-align: center;
+}
+
+.content{
+    background: url(/assets/img/image-fond.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    /* margin: 0 10px; */
+}
+
+li{
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin: 0 20px;
+
+}
+
+li>a{
+    color: rgb(229, 19, 215);
+    text-align: center;
+    text-decoration: none;
+    /* margin-top:100px ; */
+    font-weight: 400;
+}
+
+.logo img{
+    width: 20%;
+}
+
+
+ /* Home acceuil CSS */
+
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#995fa8), url("/assets/img/beach-8669736_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: transparent;
+    text-transform: lowercase;
+}
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#home p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.home-btn {
+    margin-bottom: 20px;
+}
+
+.find_trip {
+    background-color: #2d08b4;
+    padding: 20px;
+    width: 70%;
+    position: absolute;
+    bottom: -50px;
+    box-shadow: 0 0 10px #a199a2;
+}
+.find_trip form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.find_trip form div , .find_trip form input[type="submit"]{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.find_trip form label {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.find_trip form input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #29d9d5;
+    outline: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+.find_trip form input[type="submit"] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.find_trip form input[type="submit"]:hover {
+    box-shadow: 0 0 10px #7c1081;
+    background: #995fa8;
+}
+
+
+section{
+    background: rgb(106, 206, 18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    background: red;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+figure{
+
+}
