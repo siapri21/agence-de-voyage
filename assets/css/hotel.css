@@ -1,0 +1,43 @@
+#paris-fond {
+    background: url("/assets/img/parisse.jpg");
+    /* background-position: ; */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+form{
+
+    width: 100px;
+    padding: 20px 60px;
+}
+
+.field-group{
+    width: 100%;
+    outline: 0;
+    border: 2px solid #9999;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 60px;
+    background: transparent;
+    font-size: 1em;
+    color: #999999;
+}
+
+.icons{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    font-size: 1.6em;
+}
+

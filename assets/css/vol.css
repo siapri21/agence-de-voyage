@@ -6,44 +6,31 @@
 }
 
 header{
-    background:rgba(170, 204, 232, 0.5);
-    /* justify-content: space-between; */
-    /* padding:  0 10px; */
     display: flex;
-    /* width: 100vw; */
-    /* margin: auto; */
     align-items: center;
-    /* min-height: 8vh; */
-    /* margin-top: 50px; */
-    /* position: fixed; */
-    /* margin-right:100px ; */
     text-align: center;
+    background:rgba(170, 204, 232, 0.5);
 }
 
-.content{
-    background: url(/assets/img/image-fond.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-}
-
+/* #navigation{
+    display: block;
+    gap: 20px;
+} */
 
 a{
     text-decoration: none;
-    
 }
 
 ul{
-    list-style: none;
     display: flex;
+    list-style: none;
     text-align: center;
-    /* margin: 0 10px; */
 }
 
 li{
     display: block;
-    width: 100px;
     text-align: center;
+    width: 100px;
     margin: 0 20px;
 
 }
@@ -52,16 +39,17 @@ li>a{
     color: rgb(229, 19, 215);
     text-align: center;
     text-decoration: none;
-    /* margin-top:100px ; */
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
 .logo img{
     width: 20%;
 }
 
-
- /* Home acceuil CSS */
+.mobile{
+    display: none;
+    cursor: pointer;
+}
 
 #home {
     background: linear-gradient(rgba(0,0,0,0.1),#995fa8), url("/assets/img/beach-8669736_1280.jpg");
@@ -74,6 +62,7 @@ li>a{
     flex-direction: column;
     position: relative;
 }
+
 #home h2 {
     font-size: 45px;
     margin-bottom: 10px;
@@ -81,84 +70,184 @@ li>a{
     color: transparent;
     text-transform: lowercase;
 }
+
 #home h4 {
     font-size: 50px;
     color: #fff;
     margin-bottom: 10px;
     text-transform: capitalize;
 }
+
 #home p {
     color: #fff;
     margin-bottom: 10px;
     font-size: 12px;
 }
+
 .home-btn {
     margin-bottom: 20px;
 }
 
 .find_trip {
-    background-color: #2d08b4;
+    background-color: #fff;
     padding: 20px;
     width: 70%;
     position: absolute;
     bottom: -50px;
     box-shadow: 0 0 10px #a199a2;
 }
+
 .find_trip form {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
 }
+
 .find_trip form div , .find_trip form input[type="submit"]{
     display: flex;
     flex-direction: column;
     width: 20%;
 }
+
 .find_trip form label {
     color: #fff;
     font-size: 15px;
     margin-bottom: 10px;
 }
+
 .find_trip form input {
     padding: 5px 20px;
     background-color: transparent;
-    border: 1px solid #29d9d5;
+    border: 1px solid #111a19;
     outline: 0;
     width: 100%;
     font-size: 13px;
     color: #fff;
 }
+
 .find_trip form input[type="submit"] {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    color: #29d9d5;
+    color: #29d972;
     cursor: pointer;
     transition: 0.5s;
 }
+
 .find_trip form input[type="submit"]:hover {
     box-shadow: 0 0 10px #7c1081;
     background: #995fa8;
 }
 
 
-section{
-    background: rgb(106, 206, 18);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* galleries */
+
+.destination >h1{
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: rgb(77, 77, 193);
 }
 
-article{
+.gallery{
     display: flex;
-    background: red;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 90px;
 }
 
-figure{
+.gallery-conteneurs {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(34, 36, 34, 0.744), 0 1px 2px rgba(0, 0, 0, 0.822);
+    transition: transform 0.7s; 
+    border-radius: 15px;
+}
+
+.gallery-conteneurs:hover{
+    border: 1px solid rgb(240, 234, 234);
+    transform: translateY(-15px);
+}
+
+.gallery-image h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-image span{
+    background: gray;
+    font-size: 3rem;
+    
+}
+
+
+.gallery-image {
+    text-align: center; 
+    flex-direction: row;
+}
+
+.gallery-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+button {
+    color: #fff;
+    border: 1px solid #f9f3fa;
+    border-radius: 15px;
+    background: #995fa8;
+    width: 150px;
+    margin-left: 100px;
+    
+}
+
+button>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width:780px) {
+  header{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  li{
+    display: none;
+    width: 50px;
+  }
+  
+  li>a{
+
+    font-size: 2px;
+    width: 50px;
+    
+}
+  
+
+nav{
+    background: red;
+}
+
+nav.active {
+    display: flex;
+    left: 0;
+    
+}
+
+.mobile{
+  display: block;
+  width: 100px;
+}
 
 }
