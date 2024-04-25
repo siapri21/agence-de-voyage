@@ -13,17 +13,27 @@
 
 
 }
-body{
-  background-color: #264d61;
+
+
+.text-on-video {
+  position: relative;
+  display: inline-block;
 }
 
-#home {
-  background: url(/assets/img/damian-ochrymowicz-elhAn2I455g-unsplash.jpg);
+.text-on-video video {
+  display: block;
   width: 100vw;
-  background-size: cover;
-  height: 100vh;
-  background-position: bottom;
-  
+  /* height: auto; */
+}
+
+.text-on-video .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* font-size: 24px; */
+  text-align: center;
 }
 
 .container-fluid{
