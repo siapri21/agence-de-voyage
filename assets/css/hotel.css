@@ -1,43 +1,115 @@
 #paris-fond {
-    background: url("/assets/img/parisse.jpg");
-    /* background-position: ; */
-    background-size: cover;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    background: url("/assets/img/parisse.jpg");
+    /* background-position: ; */
+    background-size: cover;
+    height: 100vh;
+    padding: 100px;
 }
 
-form{
 
-    width: 100px;
-    padding: 20px 60px;
+
+.containers{
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    width: 35vw;
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(34, 36, 34, 0.744), 0 1px 2px rgba(0, 0, 0, 0.822);
+    
+
 }
 
 .field-group{
-    width: 100%;
-    outline: 0;
-    border: 2px solid #9999;
-    border-radius: 3px;
     padding: 10px;
-    padding-left: 60px;
-    background: transparent;
-    font-size: 1em;
-    color: #999999;
 }
 
-.icons{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 60px;
-    height: 100%;
+input{
+    width: 340px;
+}
+
+/* galleries */
+
+.text> h2{
+    text-align: center;
+    padding: 10vh;
+    font-size: 4rem;
+}
+
+.contents{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    color: #999999;
-    font-size: 1.6em;
+    flex-wrap: wrap;
+    padding: 10vh;
+
+    
 }
 
+.mages{
+    border-radius: 15px;
+    width:300px;
+    /* background: greenyellow; */
+    box-shadow: 0 1px 3px rgba(12, 12, 15, 0.744), 0 1px 2px rgba(0, 0, 0, 0.822);
+    
+}
+.mages img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+#plus > button{
+    display: block;
+    margin: 0 auto;
+    /* text-align: center; */
+    width: 50%;
+    border-radius: 15px;
+    border: 1px solid  rgba(14, 23, 151, 0.779);
+    color: black;
+    background: rgba(14, 23, 151, 0.779);
+    margin: 20px auto;
+    
+}
+@media screen and (max-width:900px) {
+
+    #paris-fond{
+        background: #fff;;
+        /* width: 80%; */
+    }
+    .containers{
+        width: 250px;
+        height: 400px;
+        margin-bottom: 300px;
+    }
+
+    input{
+        width: 200px;
+    }
+
+     label{
+        padding:10px;
+     }
+
+     h2{
+        font-size: 0.9rem;
+     }
+
+     .mages{
+        width: 200px;
+        /* height: 200px; */
+     }
+
+     .mages img{
+         width: 200px;
+     }
+
+     #plus >button{
+        margin-left: 100px;
+     }
+    
+}
