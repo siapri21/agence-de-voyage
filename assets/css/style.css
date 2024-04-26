@@ -37,7 +37,7 @@
 }
 
 .container-fluid{
-  background-color: #264d61;
+  /* background-color: #264d61; */
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -53,17 +53,13 @@
   width: 30%;
 }
 
-/* #voiture ,img {
-  width: 15%;
-} */
-
 .login >a{
   text-decoration: none;
   bottom: 10%;
 }
 
 
-/* button{
+ button{
   display: block;
   margin: 60px auto;
   justify-content: center;
@@ -71,12 +67,12 @@
   margin-bottom:80px ;
   border: 15px solid #fff;
   border-radius: 15px;
-} */
+} 
 
-/* button>a{
+button>a{
   text-decoration: none;
 }
- */
+ 
 
  h3{
   text-align: center;
@@ -90,12 +86,13 @@
   justify-content: center;
   position: relative;
   flex-wrap: nowrap;
+  
 }
 
 .main-image {
-  width: 20px; /* Adjust as needed */
+  width: 20px; 
   height: auto;
-  margin: 0 10px; /* Spacing between images */
+  margin: 0 10px; 
 }
 
 .image-wrapper ,img{
@@ -112,28 +109,35 @@
 .home{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 10vh;
-
-  
+  flex-wrap: nowrap;
+  padding: 8vh;
+  width: 100%;
 }
 
 .mages{
-  border-radius: 15px;
-  width:300px;
+  border-radius: 5px;
+  transform: rotate(50deg);
+  transition: transform 1s; 
+  width:250px;
   box-shadow: 0 1px 3px rgba(12, 12, 15, 0.744), 0 1px 2px rgba(0, 0, 0, 0.822);
   
 }
 .mages img{
-  width: 300px;
-  border-radius: 10px;
+  width: 250px;
+  border-radius: 5px;
+  
 }
 
-h2{
+.mages:hover{
+  transform: translateY(-15px);
+ 
+}
+
+.text>h3{
   text-align: center;
-  padding: 50px;
+ 
 }
 
 .mage{
@@ -145,6 +149,10 @@ h2{
   height: 45vh;
   border: 1px solid;
   margin: 50px auto;
+}
+
+.texte> h3{
+  text-align: center;
 }
 
 #musee{
@@ -163,14 +171,13 @@ h2{
 /* button */
 
 button{
-  border: 5px solid var(--root);
-  border-radius: 15px;
-  background: #fff;
+  border: 5px solid var(--var);
+  border-radius: 15%;
+  background: var(--var);
   width: 200px;
+  color: #fff;
 
 }
-
-
 
 .containaire {
   width: 80%;
@@ -187,8 +194,6 @@ button{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 
 
@@ -262,9 +267,31 @@ button{
     width: 100px;
   }
 
-  .para>p{
+  .para >p{
     font-size: 10px;
   }
+
+  .home{
+    display: block;
+    
+  }
+
+ 
+
+  .mages{
+    width: 110px;
+    height: 110px;
+    
+  }
+
+  .mages img{
+    width: 110px;
+  }
+
+  .text>h3{
+    font-size: 10px;
+  }
+
     
   }
 

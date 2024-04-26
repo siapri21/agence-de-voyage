@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #fff;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -12,10 +16,6 @@ header{
     background:rgba(170, 204, 232, 0.5);
 }
 
-/* #navigation{
-    display: block;
-    gap: 20px;
-} */
 
 a{
     text-decoration: none;
@@ -39,7 +39,7 @@ li>a{
     color: rgb(229, 19, 215);
     text-align: center;
     text-decoration: none;
-    /* font-weight: 400; */
+   
 }
 
 .logo img{
@@ -164,7 +164,7 @@ li>a{
 }
 
 .gallery-conteneurs {
-    width: 300px;
+    width: 350px;
     margin-bottom: 20px;
     box-shadow: 0 1px 3px rgba(34, 36, 34, 0.744), 0 1px 2px rgba(0, 0, 0, 0.822);
     transition: transform 0.7s; 
@@ -214,7 +214,7 @@ button>a{
 
 
 
-
+/* media queri */
 
 @media screen and (max-width:780px) {
   header{
@@ -235,9 +235,9 @@ button>a{
 }
   
 
-nav{
+/* nav{
     background: red;
-}
+} */
 
 nav.active {
     display: flex;
