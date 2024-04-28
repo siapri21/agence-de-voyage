@@ -1,0 +1,138 @@
+# destination 
+
+<div class="destination">
+        <h1>destinations </h1>
+    </div>
+    <main class="containers-gallery container-fluid">
+        <section class="gallery">
+            
+                <article class="gallery-conteneurs ">
+                    <figure class="gallery-image col-md-12">
+                        <img src="../assets/img/thailande.jpg" alt="thailande">
+                       <figure>
+                      
+                        <h5>Thailande</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. 
+                        </p>
+                       </figure>
+                    </figure>
+                   </article> 
+        
+            
+        
+                <article class="gallery-conteneurs ">
+                    <figure class="gallery-image col-md-12">
+                        <img src="../assets/img/ile de nosy madagascar.jpg" alt="ile de nosy madagascar">
+                        <figure>
+                          
+                          <h5>Ile de Nosy Madagascar </h5>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. </p>
+                        </figure>
+                    </figure>
+                   </article>
+
+                   <article class="gallery-conteneurs ">
+                    <figure class="gallery-image col-md-12">
+                        <img src="../assets/img/malawi.jpg" alt="malawi">
+                        <figure>
+                        
+                          <h5>Malawi</h5>
+                          <p> Malawi</p>
+                          </figure>
+                    </figure>
+                   </article>
+
+
+                   <article class="gallery-conteneurs ">
+                    <figure class="gallery-image col-md-12">
+                        <img src="../assets/img/maldive.png" alt=" maldive">
+
+                        <figure>
+                          
+                          <h2>Maldive</h2>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. </p>
+                        </figure>
+                    </figure>
+                   </article>
+                   <article class="gallery-conteneurs ">
+                       <figure class="gallery-image col-md-12">
+                           <img src="../assets/img/Kiribati.jpg" alt="Kiribati">
+                         <figure>
+                         
+                          <h5>Karibati</h5>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. </p>
+                         </figure>
+                       </figure>
+                      </article>
+           
+                      <article class="gallery-conteneurs ">
+                       <figure class="gallery-image col-md-12">
+                           <img src="../assets/img/sri lanka.jpg" alt="Sri lanka">
+                         <figure>
+                         
+                          <h5>Sri lanka</h5>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. 
+                          </p>
+                         </figure>
+                       </figure>
+                      </article>
+                      
+                    </section> 
+
+                
+
+
+                
+.destination >h1{
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: rgb(77, 77, 193);
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 90px;
+}
+
+.gallery-conteneurs {
+    width: 350px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(34, 36, 34, 0.744), 0 1px 2px rgba(0, 0, 0, 0.822);
+    transition: transform 0.7s; 
+    border-radius: 15px;
+}
+
+.gallery-conteneurs:hover{
+    border: 1px solid rgb(240, 234, 234);
+    transform: translateY(-15px);
+}
+
+.gallery-image h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-image span{
+    background: gray;
+    font-size: 3rem;
+    
+}
+
+
+.gallery-image {
+    text-align: center; 
+    flex-direction: row;
+}
+
+.gallery-image img {
+    width: 100%;
+    border-radius: 15px;
+}

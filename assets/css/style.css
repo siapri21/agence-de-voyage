@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -5,14 +6,226 @@
 }
 
 :root{
-  --var:#264d61;
+  --var:#0b2430ac;
   --root:#623526;
   --primary:#fff;
   --secondary:#783F8E;
   --primary-bs:#4F1271;
 
+}
+
+/* header */
+
+header{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+  background: transparent;
+  z-index: 999;
+  background-color: #782206c4;
+}
+
+li{
+  list-style: none;
+}
+
+li> a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+}
+
+#navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
+
+#logo{
+  width: 400px;
 
 }
+
+#links{
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 100px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.toggles_btn{
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.action_btn{
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.action_btn ,a{
+  text-decoration: none;
+}
+
+
+/* dropdwon menu */
+#dropdowns_btn> li{
+    display: none;
+}
+
+.conteneur{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 600px;
+  background: #f5f5f5;
+  margin-top: 300px;
+  box-shadow: 0 30px 50px #dbdbdb;
+  z-index:999;
+
+}
+
+.conteneur .conteneur-slide .conteneur-item{
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  /* box-shadow: 0 30px 50px #505050; */
+  background-position: 50% 50%;
+  background-size: cover;
+  display: inline-block;
+  transition: 0.5s;
+}
+.conteneur-slide .conteneur-item:nth-child(1),
+.conteneur-slide .conteneur-item:nth-child(2){
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.conteneur-slide .conteneur-item:nth-child(3){
+  left: 50%;
+}
+.conteneur-slide .conteneur-item:nth-child(4){
+  left: calc(50% + 220px);
+}
+.conteneur-slide .conteneur-item:nth-child(5){
+  left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.conteneur-slide .conteneur-item:nth-child(n + 6){
+  left: calc(50% + 660px);
+  opacity: 0;
+}
+
+.conteneur-item .conteneur-content{
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  width: 300px;
+  text-align: left;
+  color: gray;
+  transform: translate(0, -50%);
+  font-family: system-ui;
+  display: none;
+}
+
+
+.conteneur-slide .conteneur-item:nth-child(2) .conteneur-content{
+  display: block;
+}
+
+
+.conteneur-content .name{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+
+.conteneur-content .des{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.conteneur-content button{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+
+@keyframes animate {
+  from{
+      opacity: 0;
+      transform: translate(0, 100px);
+      filter: blur(33px);
+  }
+
+  to{
+      opacity: 1;
+      transform: translate(0);
+      filter: blur(0);
+  }
+}
+
+
+
+.button{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.button button{
+  width: 40px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+
+.button button:hover{
+  background: #ababab;
+  color: #fff;
+}
+
 
 
 .text-on-video {
@@ -37,11 +250,9 @@
 }
 
 .container-fluid{
-  /* background-color: #264d61; */
   width: 100%;
   height: 100%;
   padding: 10px;
-  
 }
 
 .logo img{
@@ -97,7 +308,7 @@ button>a{
 
 .image-wrapper ,img{
   width: 15%;
-  gap: 1px;
+  /* gap: 1px; */
 }
 
 .image-wrapper > h5{
@@ -112,8 +323,10 @@ button>a{
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
   padding: 8vh;
   width: 100%;
+  z-index: 1;
 }
 
 .mages{
@@ -196,6 +409,78 @@ button{
 }
 
 
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -40px;
+  left: 19px;
+}
+
+.card.panels-card .hour {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+
+/* avis */
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  overflow-x: hidden;
+}
+
+.reviews-wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Animation horizontale */
+}
+
+.review {
+  flex: 0 0 50%; /* Chaque avis occupe 50% de la largeur */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 5px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
 
 /* footer */
 .footer-basic {
@@ -257,7 +542,58 @@ button{
   margin-bottom:0;
 }
 
-@media screen and (max-width:768px){
+
+
+
+@media screen and (max-width:678px){
+header{
+  width: 100%;
+}
+
+#navigation{
+  width: 100%;
+}
+  #navigation #links, .action_btn{
+    display: none;
+  }
+
+ .toggles_btn{
+    display: block;
+    margin-right: 50px;
+  }
+
+  /* dropdwon menu */
+
+  #dropdowns_btn{
+    display: none;
+    margin-right:200px;
+    top: 100px;
+    width: 50px;
+    background: rgb(220, 209, 232);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885,0.32,1.275);
+   }
+
+   #dropdowns_btn li{
+    padding: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+  #dropdowns_btn .active{
+    height: 240px;
+   }
+
+  .carousel .list .item .content{
+    padding-right: 0;
+}
+.carousel .list .item .content .title{
+    font-size: 30px;
+}
+
   .mage{
     width: 390px;
     height: 250px;
@@ -275,8 +611,6 @@ button{
     display: block;
     
   }
-
- 
 
   .mages{
     width: 110px;

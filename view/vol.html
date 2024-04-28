@@ -15,42 +15,47 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-  <section class="container">
-    <main class="box">
-      <header class="siapri">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-          <div class="container-fluid">
-            <a class="navbar-brand logo" href="#">
-              <img id="logo" src="../assets/img/modele-logo-voyage.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html"> Accueil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../view/vol.html">Vols</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../view/hotels.html">Hotels</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../view/">Location de Voiture</a>
-                </li>
-              </ul>
-              <span class="navbar-text login">
-               <a href="../view/login.html">
-                <img id="user" src="../assets/img/utilisateur.png" alt="utilisateur">Connexion
-               </a>
-              </span>
-            </div>
-          </div>
-        </nav>
-      </main>
-    </section>
+ <!-- header -->
+ <header>
+  <nav id="navigation">
+    <div id="logo">
+    <a href="../index.html">  <img src="../assets/img/modele-logo-voyage.png" alt="logo de la page "></a>
+    </div>
+    <ul id="links">
+      <li><a href="../index.html"><i class="fa-solid fa-house"></i>Accueil</a></li>
+      <li><a href="../view/vol.html"><i class="fa-solid fa-jet-fighter-up"></i>Vols</a></li>
+      <li><a href="../view/hotels.html"><i class="fa-solid fa-bed"></i>Hotels</a></li>
+      <li><a href="../view/voiture.html"><i class="fa-solid fa-car"></i></a>Location de voiture</li>
+      <li><a href="../view/login.html"> <i class="fa-solid fa-right-to-bracket"></i>Connexion</a> </li>      
+    </ul>
+
+    <!-- <a href="#" class="action_btn">Recherche</a> -->
+    <div class="toggles_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  <div id="dropdowns_btn ">
+      <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="../view/vol.html"><i class="fa-solid fa-jet-fighter-up"></i></a></li>
+      <li><a href="../view/hotels.html"><i class="fa-solid fa-bed"></i></a></li>
+      <li><a href="../view/voiture.html"><i class="fa-solid fa-car"></i></a></li>
+      <li><a href="../view/login.html"> <i class="fa-solid fa-right-to-bracket"></i></a> </li> 
+      <!-- <li> <a href="#" class="action_btn">Recherche</a></li>      -->
+  </div>
+</header>
+
+
+      <!-- images de fond -->
+    <!-- <section id="home">
+      <div class="text-on-video">
+        <video autoplay loop muted>
+          <source src="../assets/video/48504-454713939_small.mp4" type="video/mp4">
+        </video>
+        <div class="text">
+          <button><a href="#"></a>Explorez</button>
+        </div>
+      </div>
+    </section> -->
 
           <!-- acceuil section -->
     <section id="home">
@@ -83,93 +88,230 @@
     </section>
 
     <!-- destinantions -->
-    <div class="destination">
-        <h1>destinations </h1>
-    </div>
-    <main class="containers-gallery container-fluid">
-        <section class="gallery">
-            
-                <article class="gallery-conteneurs ">
-                    <figure class="gallery-image col-md-12">
-                        <img src="../assets/img/thailande.jpg" alt="thailande">
-                       <figure>
-                      
-                        <h5>Thailande</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. 
-                        </p>
-                       </figure>
-                    </figure>
-                   </article> 
-        
-            
-        
-                <article class="gallery-conteneurs ">
-                    <figure class="gallery-image col-md-12">
-                        <img src="../assets/img/ile de nosy madagascar.jpg" alt="ile de nosy madagascar">
-                        <figure>
-                          
-                          <h5>Ile de Nosy Madagascar </h5>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. </p>
-                        </figure>
-                    </figure>
-                   </article>
+    <main> 
+            <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+               <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"> 
+                <div class="col"> <div class="card h-100 shadow-sm">
+                   <img src="https://i.natgeofe.com/n/c33b368d-d075-4189-8f15-8f54b8dd7461/coverstory_mexico_AWL_3x2.jpg?w=1436&h=958" class="card-img-top" alt="Mexico">
+                   
+                   <div class="card-body"> <div class="clearfix mb-3">
+                     <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> 
+                     <span class="float-end price-hp">12354.00&euro;</span>
+                     </div>
+                     
+                     <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                     
+                     <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a>
+                     </div>
 
-                   <article class="gallery-conteneurs ">
-                    <figure class="gallery-image col-md-12">
-                        <img src="../assets/img/malawi.jpg" alt="malawi">
-                        <figure>
+                     </div>
+                     </div> 
+                    </div>
+                    
+                    <div class="col">
+                       <div class="card h-100 shadow-sm"> <img src="https://i.natgeofe.com/n/1d0200ce-9536-4bfe-b6aa-7c62560dd2a1/ile-daix-aerial-590_4x3.jpg?w=1436&h=1078" class="card-img-top" alt="ile Aix"> 
                         
-                          <h5>Malawi</h5>
-                          <p> Malawi</p>
-                          </figure>
-                    </figure>
-                   </article>
+                        <div class="card-body"> 
+                          <div class="clearfix mb-3">
+                             <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span>
+                             
+                             <span class="float-end"><a href="#">Example</a></span>
+                             </div> 
+                             
+                             <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.
+
+                             </h5>
+                              <div class="d-grid gap-2 my-4">
+                                 <a href="#" class="btn btn-warning">Check offer</a>
+                                 </div> 
+                                
+                                </div>
+                              
+                              </div>
+                             </div> 
+                             <div class="col"> 
+                              <div class="card h-100 shadow-sm">
+                                 <img src="https://i.natgeofe.com/n/0609dc30-d9f2-4828-a0ef-6e7a747fba77/coverstory_mexico_GettyI_2x3.jpg?w=1436&h=2154" class="card-img-top" alt="bassin de californie"> <div class="label-top shadow-sm">
+                                  Asus Rog</div>
+                                   <div class="card-body">
+                                    
+                                    <div class="clearfix mb-3">
+                                       <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
+                                       
+                                       <span class="float-end">
+                                        
+                                        <a href="#" class="small text-muted">Reviews</a>
+                                      </span> 
+                                    </div>
+                                     <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                                     
+                                     <div class="text-center my-4">
+                                       <a href="#" class="btn btn-warning">Check offer</a>
+                                       </div> 
+                                       
+                                       <div class="clearfix mb-1"> 
+                                        <span class="float-start"><i class="far fa-question-circle"></i>
+                                        </span>
+                                        
+                                        <span class="float-end"><i class="fas fa-plus"></i>
+                                        </span> 
+                                      
+                                      </div> 
+                                    </div>
+                                   </div>
+                                   </div>
+
+                                    <div class="col"> 
+                                      <div class="card h-100 shadow-sm">
+                                         <img src="https://i.natgeofe.com/n/bd40e5a2-e085-4f1d-88a2-6504a8348690/GettyImages-1168257279_3x4.jpg?w=2520&h=3360" class="card-img-top" alt="panama">
+                                         
+                                         <div class="label-top shadow-sm">DELL</div>
+
+                                          <div class="card-body"> 
+                                            <div class="clearfix mb-3">
+                                               <span class="float-start price-hp">12354.00&euro;
+
+                                               </span>
+                                                <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span>
+                                               </div>
+                                                <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.
+                
+                                                </h5>
+                                                 <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a> 
+                                                </div>
+                                                 <div class="clearfix mb-1"> 
+                                                  <span class="float-start"><i class="far fa-question-circle"></i>
+                                                  </span> 
+                                                  <span class="float-end"><i class="fas fa-plus"></i>
+                                                  </span>
+                                                 </div>
+                                                </div>
+                                                 </div> 
+                                                </div>
 
 
-                   <article class="gallery-conteneurs ">
-                    <figure class="gallery-image col-md-12">
-                        <img src="../assets/img/maldive.png" alt=" maldive">
+                                                <div class="col"> 
+                                                  <div class="card h-100 shadow-sm">
+                                                     <img src="../assets/img/malawi.jpg" class="card-img-top" alt="...">
+                                                     
+                                                     <div class="label-top shadow-sm">DELL</div>
+            
+                                                      <div class="card-body"> 
+                                                        <div class="clearfix mb-3">
+                                                           <span class="float-start price-hp">12354.00&euro;
+            
+                                                           </span>
+                                                            <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span>
+                                                           </div>
+                                                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.
+                            
+                                                            </h5>
+                                                             <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a> 
+                                                            </div>
+                                                             <div class="clearfix mb-1"> 
+                                                              <span class="float-start"><i class="far fa-question-circle"></i>
+                                                              </span> 
+                                                              <span class="float-end"><i class="fas fa-plus"></i>
+                                                              </span>
+                                                             </div>
+                                                            </div>
+                                                             </div> 
+                                                            </div>
 
-                        <figure>
-                          
-                          <h2>Maldive</h2>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. </p>
-                        </figure>
-                    </figure>
-                   </article>
-                   <article class="gallery-conteneurs ">
-                       <figure class="gallery-image col-md-12">
-                           <img src="../assets/img/Kiribati.jpg" alt="Kiribati">
-                         <figure>
-                         
-                          <h5>Karibati</h5>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. </p>
-                         </figure>
-                       </figure>
-                      </article>
-           
-                      <article class="gallery-conteneurs ">
-                       <figure class="gallery-image col-md-12">
-                           <img src="../assets/img/sri lanka.jpg" alt="Sri lanka">
-                         <figure>
-                         
-                          <h5>Sri lanka</h5>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, molestiae. 
-                          </p>
-                         </figure>
-                       </figure>
-                      </article>
-                      
-                    </section> 
-                    <!-- button savoir + -->
+                                                            <div class="col"> 
+                                                              <div class="card h-100 shadow-sm">
+                                                                 <img src="../assets/img/thailande.jpg" class="card-img-top" alt="...">
+                                                                 
+                                                                 <div class="label-top shadow-sm">DELL</div>
+                        
+                                                                  <div class="card-body"> 
+                                                                    <div class="clearfix mb-3">
+                                                                       <span class="float-start price-hp">12354.00&euro;
+                        
+                                                                       </span>
+                                                                        <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span>
+                                                                       </div>
+                                                                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.
+                                        
+                                                                        </h5>
+                                                                         <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a> 
+                                                                        </div>
+                                                                         <div class="clearfix mb-1"> 
+                                                                          <span class="float-start"><i class="far fa-question-circle"></i>
+                                                                          </span> 
+                                                                          <span class="float-end"><i class="fas fa-plus"></i>
+                                                                          </span>
+                                                                         </div>
+                                                                        </div>
+                                                                         </div> 
+                                                                        </div>
+            
+
+                                                                        <div class="col"> 
+                                                                          <div class="card h-100 shadow-sm">
+                                                                             <img src="../assets/img/me meurice.jpg" class="card-img-top" alt="...">
+                                                                             
+                                                                             <div class="label-top shadow-sm">DELL</div>
+                                    
+                                                                              <div class="card-body"> 
+                                                                                <div class="clearfix mb-3">
+                                                                                   <span class="float-start price-hp">12354.00&euro;
+                                    
+                                                                                   </span>
+                                                                                    <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span>
+                                                                                   </div>
+                                                                                    <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.
+                                                    
+                                                                                    </h5>
+                                                                                     <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a> 
+                                                                                    </div>
+                                                                                     <div class="clearfix mb-1"> 
+                                                                                      <span class="float-start"><i class="far fa-question-circle"></i>
+                                                                                      </span> 
+                                                                                      <span class="float-end"><i class="fas fa-plus"></i>
+                                                                                      </span>
+                                                                                     </div>
+                                                                                    </div>
+                                                                                     </div> 
+                                                                                    </div>
+
+                                                                                    <div class="col"> 
+                                                                                      <div class="card h-100 shadow-sm">
+                                                                                         <img src="../assets/img/maldive.png" class="card-img-top" alt="...">
+                                                                                         
+                                                                                         <div class="label-top shadow-sm">DELL</div>
+                                                
+                                                                                          <div class="card-body"> 
+                                                                                            <div class="clearfix mb-3">
+                                                                                               <span class="float-start price-hp">12354.00&euro;
+                                                
+                                                                                               </span>
+                                                                                                <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span>
+                                                                                               </div>
+                                                                                                <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.
+                                                                
+                                                                                                </h5>
+                                                                                                 <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a> 
+                                                                                                </div>
+                                                                                                 <div class="clearfix mb-1"> 
+                                                                                                  <span class="float-start"><i class="far fa-question-circle"></i>
+                                                                                                  </span> 
+                                                                                                  <span class="float-end"><i class="fas fa-plus"></i>
+                                                                                                  </span>
+                                                                                                 </div>
+                                                                                                </div>
+                                                                                                 </div> 
+                                                                                                </div>
+                                    
+                        
+                                                            
+                                               </div>
+                                               </div>
+                                               </main>
+
+                                               <!-- button savoir + -->
 
                     <button><a href="#">En Savoir Plus</a></button>
-
-    
-
-       
-        
-    
 
 
 </body>
