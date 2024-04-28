@@ -6,11 +6,17 @@
 }
 
 :root{
-  --var:#0b2430ac;
-  --root:#623526;
+  /* --var:#0b2430ac;
   --primary:#fff;
   --secondary:#783F8E;
-  --primary-bs:#4F1271;
+  --primary-bs:#4F1271; */
+  /* palettre aventure */
+  --marronTerreux:#8B4513;
+  --vertOlive:#556B2F;
+  --rougeVif:#FF0000;
+  --jaunesolaire:#FFFF00;
+  --beige:#F5F5DC;
+  --bleuCiel:#87CEEB;
 
 }
 
@@ -23,7 +29,7 @@ header{
   padding: 2vh;
   background: transparent;
   z-index: 999;
-  background-color: #782206c4;
+  background-color: var(--vertOlive);
 }
 
 li{
@@ -103,6 +109,10 @@ li> a{
 
 }
 
+.conteneur-content button{
+  background-color: #8B4513;
+}
+
 .conteneur .conteneur-slide .conteneur-item{
   width: 200px;
   height: 300px;
@@ -148,7 +158,8 @@ li> a{
   left: 100px;
   width: 300px;
   text-align: left;
-  color: gray;
+  color:var(--beige);
+  font-weight: 600;
   transform: translate(0, -50%);
   font-family: system-ui;
   display: none;
@@ -217,7 +228,7 @@ li> a{
   border: none;
   cursor: pointer;
   margin: 0 5px;
-  border: 1px solid #000;
+  border: 1px solid var(--marronTerreux);
   transition: 0.3s;
 }
 
@@ -227,27 +238,6 @@ li> a{
 }
 
 
-
-.text-on-video {
-  position: relative;
-  display: inline-block;
-}
-
-.text-on-video video {
-  display: block;
-  width: 100vw;
-  /* height: auto; */
-}
-
-.text-on-video .text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  /* font-size: 24px; */
-  text-align: center;
-}
 
 .container-fluid{
   width: 100%;
@@ -383,14 +373,25 @@ button>a{
 
 /* button */
 
-button{
-  border: 5px solid var(--var);
-  border-radius: 15%;
-  background: var(--var);
-  width: 200px;
-  color: #fff;
+#histoire button{
+  border: 1px solid var(--jaunesolaire);
+  border-radius: 15px;
+  background: var(--jaunesolaire);
+  /* width: 200px; */
+  color: black;
 
 }
+
+#histoire >a{
+  text-decoration: none;
+}
+#histoire button:hover{
+  background: var(--beige);
+  border: 1px solid;
+  overflow: hidden;
+}
+
+
 
 .containaire {
   width: 80%;
@@ -485,8 +486,8 @@ p {
 /* footer */
 .footer-basic {
   padding:40px 0;
-  background-color: hsla(237, 82%, 43%, 0.357);
-  color:rgba(0, 0, 0, 0.95);
+  background-color: var(--vertOlive);
+  color:#fff;
   margin-top: 100px;
 }
 
@@ -538,7 +539,7 @@ p {
   margin-top:15px;
   text-align:center;
   font-size:13px;
-  color:rgba(0, 0, 0, 0.687);
+  color:var#fff;
   margin-bottom:0;
 }
 

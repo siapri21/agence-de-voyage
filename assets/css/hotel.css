@@ -35,52 +35,7 @@ form{
 
 
 
-/* galleries */
 
-.text> h2{
-    text-align: center;
-    /* padding: 10vh; */
-    font-size: 4rem;
-}
-
-.contents{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 8vh;
-    gap: 20px;
-    
-}
-#box{
-    width: 350px;
-}
-
-.image-content{
-    border-radius: 15px;
-    width:300px;
-    box-shadow: 0 1px 3px rgba(12, 12, 15, 0.744), 0 1px 2px rgba(0, 0, 0, 0.822);
-    
-}
-.image-content img{
-    width: 300px;
-    border-radius: 10px;
-}
-
-#plus > button{
-    display: block;
-    margin: 0 auto;
-    /* text-align: center; */
-    width: 50%;
-    border-radius: 15px;
-    border: 1px solid  rgba(14, 23, 151, 0.779);
-    color: black;
-    background: rgba(14, 23, 151, 0.779);
-    margin: 20px auto;
-    
-}
 @media screen and (max-width:900px) {
 
     #paris-fond{
